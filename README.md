@@ -12,7 +12,6 @@
       margin: 0;
       overflow: hidden;
 
-      /* Beautiful Animated Background */
       background: linear-gradient(-45deg,
           #ff9a9e,
           #fad0c4,
@@ -23,7 +22,6 @@
       animation: gradientBG 10s ease infinite;
     }
 
-    /* Background Animation */
     @keyframes gradientBG {
       0% {
         background-position: 0% 50%;
@@ -155,6 +153,7 @@
 
   <!-- PAGE 1 -->
   <div id="page1" class="page" style="display:block;">
+
     <h1>Question 1 😄</h1>
 
     <p>Who is the most amazing person?</p>
@@ -162,10 +161,12 @@
     <button onclick="showPage('page2')">Me 😎</button>
     <button onclick="showPage('page2')">Definitely Me ✨</button>
     <button onclick="showPage('page2')">Obviously Me 😂</button>
+
   </div>
 
   <!-- PAGE 2 -->
   <div id="page2" class="page">
+
     <h1>Question 2 🎁</h1>
 
     <p>What do you deserve today?</p>
@@ -173,10 +174,12 @@
     <button onclick="showPage('page3')">Cake 🎂</button>
     <button onclick="showPage('page3')">Gifts 🎁</button>
     <button onclick="showPage('page3')">Everything 💖</button>
+
   </div>
 
   <!-- PAGE 3 -->
   <div id="page3" class="page">
+
     <h1>Final Question ✨</h1>
 
     <p>Ready for your birthday surprise?</p>
@@ -184,13 +187,13 @@
     <button onclick="showPage('page4')">YESSSS 😍</button>
     <button onclick="showPage('page4')">Absolutely 🎉</button>
     <button onclick="showPage('page4')">Show Me 👀</button>
+
   </div>
 
   <!-- PAGE 4 -->
   <div id="page4" class="page">
-    <h1>Happy Birthday 🎉</h1>
 
-    <p>Dear Friend,</p>
+    <h1>Happy Birthday 🎉</h1>
 
     <p>
       You are amazing and I’m so lucky to have you! 💖
@@ -201,13 +204,22 @@
       laughter and success ✨
     </p>
 
-    <p>
-      Enjoy your special day 🎂
-    </p>
+    <p>Enjoy your special day 🎂</p>
 
-    <p style="margin-top:40px;">
+    <button onclick="showPage('page5')">
+      One More Surprise 🎁
+    </button>
+
+  </div>
+
+  <!-- PAGE 5 -->
+  <div id="page5" class="page">
+
+    <h1>A Special Message 💕</h1>
+
+    <p>
       On this beautiful day, I want to tell you
-      how much you are precious to me 💕
+      how much you are precious to me 💖
     </p>
 
     <a href="https://www.facebook.com/share/r/1D3ZVqEWpr/" target="_blank">
@@ -217,15 +229,18 @@
   </div>
 
   <script>
+
     function showPage(pageId) {
 
       document.getElementById("page1").style.display = "none";
       document.getElementById("page2").style.display = "none";
       document.getElementById("page3").style.display = "none";
       document.getElementById("page4").style.display = "none";
+      document.getElementById("page5").style.display = "none";
 
       document.getElementById(pageId).style.display = "block";
     }
+
   </script>
 
 </body>
