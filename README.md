@@ -12,7 +12,7 @@
       margin: 0;
       overflow: hidden;
 
-      /* Beautiful Gradient Background */
+      /* Beautiful Animated Background */
       background: linear-gradient(-45deg,
           #ff9a9e,
           #fad0c4,
@@ -23,7 +23,7 @@
       animation: gradientBG 10s ease infinite;
     }
 
-    /* Animated Gradient */
+    /* Background Animation */
     @keyframes gradientBG {
       0% {
         background-position: 0% 50%;
@@ -115,6 +115,7 @@
       font-size: 28px;
       color: white;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+      padding: 0 20px;
     }
 
     button {
@@ -127,7 +128,7 @@
       background: white;
       color: #ff4081;
       cursor: pointer;
-      width: 280px;
+      width: 300px;
       font-weight: bold;
       transition: 0.3s;
     }
@@ -135,6 +136,10 @@
     button:hover {
       transform: scale(1.08);
       background: #fff0f5;
+    }
+
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
@@ -187,14 +192,28 @@
 
     <p>Dear Friend,</p>
 
-    <p>You are amazing and I’m so lucky to have you! 💖</p>
+    <p>
+      You are amazing and I’m so lucky to have you! 💖
+    </p>
 
     <p>
       May your life always be full of happiness,
       laughter and success ✨
     </p>
 
-    <p>Enjoy your special day 🎂</p>
+    <p>
+      Enjoy your special day 🎂
+    </p>
+
+    <p style="margin-top:40px;">
+      On this beautiful day, I want to tell you
+      how much you are precious to me 💕
+    </p>
+
+    <a href="https://www.facebook.com/share/r/1D3ZVqEWpr/" target="_blank">
+      <button>Open This Special Link ✨</button>
+    </a>
+
   </div>
 
   <script>
